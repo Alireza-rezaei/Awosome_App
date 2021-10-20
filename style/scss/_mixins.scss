@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Dosis Bold';
+    src: url('../font/Dosis-Bold.eot');
+    src: url('../font/Dosis-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Dosis-ExtraLight.woff2') format('woff2'), url('../font/Dosis-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('../font/Dosis-Medium.eot');
+    src: url('../font/Dosis-Medium.eot?#iefix') format('embedded-opentype'), url('Dosis-Medium.woff2') format('woff2'), url('Dosis-Medium.woff') format('woff');
+    font-weight: 100 !important;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin DodisBold {
+    font-family: "Dosis Bold";
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Regular.eot');
+    src: url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../font/Roboto-Regular.woff2') format('woff2'), url('../font/Roboto-Regular.woff') format('woff'), url('../font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin Dosis {
+    font-family: 'Dosis' !important;
+}
+
+@mixin Roboto {
+    font-family: 'Roboto';
+}
+
+@mixin bg-gradient {
+    background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+}
+
+@mixin hoverEfect {
+    border: 0.15rem solid $mainWhite;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+    padding: .7rem 1rem;
+    text-decoration: none;
+    &:hover {
+        background-color: $mainWhite;
+        color: $mainblack !important;
+    }
+}
+
+@mixin xs {
+    @media screen and (max-width: 350px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}

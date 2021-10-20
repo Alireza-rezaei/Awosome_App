@@ -1,0 +1,306 @@
+@import "mixins";
+@import "variables";
+@include xs {
+    .aa-header-title {
+        font-size: 2rem !important;
+    }
+    .Navbar-brand-title {
+        font-size: 1.2rem !important
+    }
+    .aa-header-image {
+        margin-left: 0 !important;
+    }
+}
+
+@include sm {
+    .aa-header-image {
+        margin: 0 !important;
+    }
+}
+
+.Dosis {
+    @include Dosis;
+}
+
+body,
+p,
+.navbar,
+.brand,
+a,
+.td-name,
+td,
+button,
+input,
+select,
+textarea {
+    font-family: "Roboto", "Helvetica", Arial, sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading {
+    font-family: "Dosis", "Helvetica", Arial, sans-serif;
+}
+
+.h1,
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.Roboto {
+    @include Roboto;
+}
+
+.aa-header {
+    background: url(/style/img/home-image.jpg);
+    position: relative;
+    background-size: cover;
+    min-height: 600px;
+    background: linear-gradient( 270deg, #f7395f 0%, #fe702e 100%);
+}
+
+// Nav Style
+.navbar-customer {
+    padding: 1.2rem 0;
+}
+
+.nav-item {
+    font-size: .8rem !important;
+}
+
+.nav-download {
+    @include hoverEfect;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    line-height: 1.6;
+    opacity: .6;
+    padding: 1.5rem;
+    margin: .5rem;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.Navbar-brand-title {
+    font-size: 1.5rem;
+    color: $mainWhite;
+    @include Dosis;
+}
+
+//Header Style
+.aa-main-header {
+    padding: 5rem 0 4rem;
+    .aa-header-title {
+        letter-spacing: 1px;
+        font-size: 3rem;
+        color: $mainWhite;
+        font-weight: 900 !important;
+    }
+    .aa-header-info {
+        font-size: 15px !important;
+        color: $mainWhite;
+    }
+    .aa-header-list {
+        color: $mainWhite;
+        font-size: 12px;
+    }
+    .aa-btn-header {
+        @include hoverEfect;
+        color: $mainWhite;
+        cursor: pointer;
+        padding: .65rem 1rem;
+        font-size: 13px;
+        font-weight: 100;
+    }
+}
+
+// Skill Style
+.skill-body {
+    .skill-icon {
+        font-size: 3rem;
+        color: $mainred;
+    }
+    .skill-title {
+        font-size: 1.3rem;
+        color: black !important;
+    }
+}
+
+.skill-underline {
+    margin-top: 5.5rem;
+    border-color: #f1eae0;
+}
+
+// About Style
+.about-body {
+    color: $mainbrown;
+    font-size: .9rem;
+}
+
+.about-title {
+    color: black;
+}
+
+.about-list-title {
+    font-size: .8rem;
+}
+
+// screenshot style
+.screenshot {
+    background-color: $mainblue;
+}
+
+.carousel-inner {
+    border-radius: 20px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: $mainred;
+    opacity: .3;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+// package style
+.card-package {
+    background-color: $mainblue;
+    position: relative;
+    transition: transform .3s linear, box-shadow 1s ease-in-out;
+    &:hover {
+        transform: translateY(-10px) translateX(4px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important;
+    }
+}
+
+.pakcage-price {
+    font-size: 2rem;
+}
+
+.price-Proposal {
+    @include bg-gradient;
+    color: $mainWhite !important;
+    border: none !important;
+}
+
+.price {
+    font-size: 1.7rem;
+    background-color: $mainWhite;
+}
+
+.list-item-package {
+    border-bottom: 1px dotted rgb(232, 229, 229);
+    line-height: 2.6rem;
+    width: 90%;
+    font-size: .9rem;
+}
+
+.card {
+    border-radius: 20px;
+    border: none !important;
+}
+
+.nav-price {
+    color: $maingray;
+    font-size: .85rem;
+}
+
+.btn-buy {
+    padding: .7rem 2.1rem;
+    border: .1rem solid $mainbrown;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: $mainbrown;
+    font-size: .8rem;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: $mainbrown;
+        color: hsla(0, 0%, 100%, .8);
+    }
+}
+
+.btn-buy-redirect {
+    margin-top: -1rem !important;
+}
+
+// Comment style 
+.comment-body {
+    background-color: $mainblue;
+}
+
+.comment-heading-text {
+    font-size: .9rem;
+}
+
+.comment-user {
+    width: 7.6rem;
+    height: auto;
+}
+
+.comment-foter {
+    font-size: .7rem;
+}
+
+// Download Style 
+.download {
+    @include bg-gradient;
+    .download-card {
+        transition: transform .19s linear;
+        &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            .download-icon {
+                opacity: .6;
+            }
+            .icon-green {
+                color: green;
+            }
+            .icon-blue {
+                color: blue;
+            }
+        }
+        .download-icon {
+            color: $maingray;
+            font-size: 3.5rem;
+        }
+        .download-app-text {
+            font-size: .9rem;
+        }
+    }
+    .download-header {
+        color: $mainWhite;
+    }
+}
+
+// Footer Style 
+.footer {
+    background-color: $mainblack;
+    .footer-icons {
+        color: $mainWhite;
+    }
+    .copy-right {
+        color: $mainWhite;
+    }
+}

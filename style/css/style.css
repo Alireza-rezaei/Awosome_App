@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Dosis Bold";
+    src: url("../font/Dosis-Bold.eot");
+    src: url("../font/Dosis-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Dosis-ExtraLight.woff2") format("woff2"), url("../font/Dosis-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url("../font/Dosis-Medium.eot");
+    src: url("../font/Dosis-Medium.eot?#iefix") format("embedded-opentype"), url("Dosis-Medium.woff2") format("woff2"), url("Dosis-Medium.woff") format("woff");
+    font-weight: 100 !important;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.eot");
+    src: url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Roboto-Regular.woff2") format("woff2"), url("../font/Roboto-Regular.woff") format("woff"), url("../font/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media screen and (max-width: 350px) {
+    .aa-header-title {
+        font-size: 2rem !important;
+    }
+    .Navbar-brand-title {
+        font-size: 1.2rem !important;
+    }
+    .aa-header-image {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aa-header-image {
+        margin: 0 !important;
+    }
+}
+
+.Dosis {
+    font-family: "Dosis" !important;
+}
+
+body,
+p,
+.navbar,
+.brand,
+a,
+.td-name,
+td,
+button,
+input,
+select,
+textarea {
+    font-family: "Roboto", "Helvetica", Arial, sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading {
+    font-family: "Dosis", "Helvetica", Arial, sans-serif;
+}
+
+.h1,
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.Roboto {
+    font-family: "Roboto";
+}
+
+.aa-header {
+    background: url(/style/img/home-image.jpg);
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+    background: linear-gradient( 270deg, #f7395f 0%, #fe702e 100%);
+}
+
+.navbar-customer {
+    padding: 1.2rem 0;
+}
+
+.nav-item {
+    font-size: 0.8rem !important;
+}
+
+.nav-download {
+    border: 0.15rem solid #ffffff;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+}
+
+.nav-download:hover {
+    background-color: #ffffff;
+    color: #403d39 !important;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    line-height: 1.6;
+    opacity: 0.6;
+    padding: 1.5rem;
+    margin: 0.5rem;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.Navbar-brand-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: "Dosis" !important;
+}
+
+.aa-main-header {
+    padding: 5rem 0 4rem;
+}
+
+.aa-main-header .aa-header-title {
+    letter-spacing: 1px;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 900 !important;
+}
+
+.aa-main-header .aa-header-info {
+    font-size: 15px !important;
+    color: #ffffff;
+}
+
+.aa-main-header .aa-header-list {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.aa-main-header .aa-btn-header {
+    border: 0.15rem solid #ffffff;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.65rem 1rem;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.aa-main-header .aa-btn-header:hover {
+    background-color: #ffffff;
+    color: #403d39 !important;
+}
+
+.skill-body .skill-icon {
+    font-size: 3rem;
+    color: #f5593d;
+}
+
+.skill-body .skill-title {
+    font-size: 1.3rem;
+    color: black !important;
+}
+
+.skill-underline {
+    margin-top: 5.5rem;
+    border-color: #f1eae0;
+}
+
+.about-body {
+    color: #66615B;
+    font-size: 0.9rem;
+}
+
+.about-title {
+    color: black;
+}
+
+.about-list-title {
+    font-size: 0.8rem;
+}
+
+.screenshot {
+    background-color: #f5fafd;
+}
+
+.carousel-inner {
+    border-radius: 20px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #f5593d;
+    opacity: 0.3;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.card-package {
+    background-color: #f5fafd;
+    position: relative;
+    transition: transform 0.3s linear, box-shadow 1s ease-in-out;
+}
+
+.card-package:hover {
+    transform: translateY(-10px) translateX(4px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.pakcage-price {
+    font-size: 2rem;
+}
+
+.price-Proposal {
+    background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.price {
+    font-size: 1.7rem;
+    background-color: #ffffff;
+}
+
+.list-item-package {
+    border-bottom: 1px dotted #e8e5e5;
+    line-height: 2.6rem;
+    width: 90%;
+    font-size: 0.9rem;
+}
+
+.card {
+    border-radius: 20px;
+    border: none !important;
+}
+
+.nav-price {
+    color: #888888;
+    font-size: 0.85rem;
+}
+
+.btn-buy {
+    padding: 0.7rem 2.1rem;
+    border: 0.1rem solid #66615B;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #66615B;
+    font-size: 0.8rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-buy:hover {
+    background-color: #66615B;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-buy-redirect {
+    margin-top: -1rem !important;
+}
+
+.comment-body {
+    background-color: #f5fafd;
+}
+
+.comment-heading-text {
+    font-size: 0.9rem;
+}
+
+.comment-user {
+    width: 7.6rem;
+    height: auto;
+}
+
+.comment-foter {
+    font-size: 0.7rem;
+}
+
+.download {
+    background: linear-gradient(270deg, #f7395f 0%, #fe702e 100%);
+}
+
+.download .download-card {
+    transition: transform 0.19s linear;
+}
+
+.download .download-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.download .download-card:hover .download-icon {
+    opacity: 0.6;
+}
+
+.download .download-card:hover .icon-green {
+    color: green;
+}
+
+.download .download-card:hover .icon-blue {
+    color: blue;
+}
+
+.download .download-card .download-icon {
+    color: #888888;
+    font-size: 3.5rem;
+}
+
+.download .download-card .download-app-text {
+    font-size: 0.9rem;
+}
+
+.download .download-header {
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #403d39;
+}
+
+.footer .footer-icons {
+    color: #ffffff;
+}
+
+.footer .copy-right {
+    color: #ffffff;
+}
+
+
+/*# sourceMappingURL=style.css.map */
